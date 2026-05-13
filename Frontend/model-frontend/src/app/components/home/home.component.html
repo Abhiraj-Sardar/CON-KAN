@@ -1,0 +1,133 @@
+<div class="home-wrap">
+
+  <!-- ╔══════ HERO ══════╗ -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <div class="hero-chip">🐾 Neural Architecture Showdown</div>
+
+      <h1 class="hero-title">
+        CON <span class="vs-text">-</span> KAN
+      </h1>
+
+      <p class="hero-desc">
+        Explore how <strong>Kolmogorov–Arnold Networks</strong> challenge the
+        reign of <strong>Convolutional Neural Networks</strong> on a classic
+        <span class="hl-cat">Cat 🐱</span> vs <span class="hl-dog">Dog 🐶</span>
+        classification task.
+      </p>
+
+      <div class="badge-row">
+        <span class="badge b-purple">🔬 KAN</span>
+        <span class="badge b-pink">🧠 CNN</span>
+        <span class="badge b-mint">🐱 Cat</span>
+        <span class="badge b-peach">🐶 Dog</span>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <!-- Replace with your own GIF / hosted image -->
+      <img
+        src="https://miro.medium.com/1*bhFifratH9DjKqMBTeQG5A.gif"
+        alt="Cat and Dog"
+        class="hero-gif"
+       />
+      <div class="hero-blob"></div>
+    </div>
+
+  </section>
+  <!-- ╚══════════════════╝ -->
+
+  <!-- ╔══════ ABOUT ══════╗ -->
+  <section class="section">
+    <h2 class="section-title">🤖 About the Models</h2>
+
+    <div class="model-cards">
+
+      <div class="mcard mcard-kan">
+        <div class="mcard-top">
+          <span class="mcard-icon">🔬</span>
+          <h3>KAN</h3>
+        </div>
+        <p>
+          <strong>Kolmogorov–Arnold Networks</strong> replace conventional
+          node-level activation functions with <em>learnable, spline-based
+          functions on edges</em>. Grounded in the Kolmogorov–Arnold
+          representation theorem, KAN offers unprecedented interpretability
+          alongside competitive accuracy.
+        </p>
+        <div class="mcard-tag">New Architecture · 2024</div>
+      </div>
+      <div style=" padding-top: 5rem;">
+       <h3 style="font-size: 8rem; color: var(--purple);">+</h3>
+       </div>
+      <div class="mcard mcard-cnn">
+        <div class="mcard-top">
+          <span class="mcard-icon">🧠</span>
+          <h3>CNN</h3>
+        </div>
+        <p>
+          <strong>Convolutional Neural Networks</strong> extract spatial
+          features through shared-weight filter banks and pooling layers,
+          forming deep hierarchies that capture edges, textures, and
+          high-level semantics — the gold standard for vision tasks.
+        </p>
+        <div class="mcard-tag">Proven Backbone · Since 1998</div>
+      </div>
+
+      <div style="padding-top: 5rem;">
+       <h3 style="font-size: 8rem; color: var(--purple);">=</h3>
+       </div>
+
+      <div class="mcard mcard-cnn">
+        <div class="mcard-top">
+          <span class="mcard-icon">🧠</span>
+          <h3>CNN</h3>
+        </div>
+        <p>
+          <strong>Convolutional Neural Networks</strong> extract spatial
+          features through shared-weight filter banks and pooling layers,
+          forming deep hierarchies that capture edges, textures, and
+          high-level semantics — the gold standard for vision tasks.
+        </p>
+        <div class="mcard-tag">Proven Backbone · Since 1998</div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- ╚══════════════════╝ -->
+
+  <!-- ╔══════ ADVANTAGES ══════╗ -->
+  <section class="section">
+    <h2 class="section-title">✨ Advantages</h2>
+
+    <div class="adv-grid">
+      <div class="adv-card"
+           *ngFor="let a of advantages"
+           [style.background]="a.color">
+        <span class="adv-icon">{{ a.icon }}</span>
+        <h4>{{ a.title }}</h4>
+        <p>{{ a.desc }}</p>
+      </div>
+    </div>
+  </section>
+  <!-- ╚══════════════════╝ -->
+
+  <!-- ╔══════ HOW TO START ══════╗ -->
+  <section class="section">
+    <h2 class="section-title">🚀 How to Start the Model</h2>
+
+    <div class="steps-list">
+      <div class="step-item" *ngFor="let s of steps">
+        <div class="step-bubble">{{ s.num }}</div>
+        <div class="step-body">
+          <h4>{{ s.title }}</h4>
+          <code>{{ s.cmd }}</code>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ╚══════════════════╝ -->
+
+</div>

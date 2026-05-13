@@ -1,0 +1,150 @@
+<div class="info-wrap">
+
+  <!-- ╔══════ HEADER ══════╗ -->
+  <div class="info-header cnn-header">
+    <span class="header-icon">🧠</span>
+    <h2>About CNN</h2>
+    <p>Convolutional Neural Networks — The Backbone of Computer Vision</p>
+  </div>
+
+  <!-- ╔══════ QUICK FACTS ══════╗ -->
+  <div class="facts-strip">
+    <div class="fact-item" *ngFor="let f of facts">
+      <span class="fact-icon">{{ f.icon }}</span>
+      <div>
+        <div class="fact-label">{{ f.label }}</div>
+        <div class="fact-value">{{ f.value }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ╔══════ MAIN GRID ══════╗ -->
+  <div class="content-grid">
+
+    <!-- Left Column -->
+    <div class="text-blocks">
+
+      <div class="info-card">
+        <h3>📖 What is a CNN?</h3>
+        <p>
+          A <strong>Convolutional Neural Network</strong> is a specialised
+          deep learning architecture designed to process data with a
+          known <em>grid-like topology</em> — most famously 2-D images.
+          CNNs exploit three key ideas:
+        </p>
+        <ul class="styled-list">
+          <li>🔲 <strong>Local connectivity</strong> — each neuron sees only a small receptive field</li>
+          <li>🔁 <strong>Weight sharing</strong> — the same filter scans the entire input</li>
+          <li>📐 <strong>Translation invariance</strong> — pooling makes features position-agnostic</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>⚙️ How Convolution Works</h3>
+        <p>
+          A filter (kernel) of size <em>k × k</em> is slid across the
+          input with stride <em>s</em>, computing an element-wise dot
+          product at every position to produce an <strong>activation / feature map</strong>.
+          For an input of size <em>W × H × C</em> and <em>F</em> filters:
+        </p>
+        <div class="math-block">
+          Output W = (W − k + 2p) / s + 1
+        </div>
+        <p>
+          Multiple stacked convolutional layers build a
+          <strong>hierarchical feature extractor</strong> — from edges and
+          blobs in early layers to complex object parts in deeper layers.
+        </p>
+      </div>
+
+      <!-- Layer Cards -->
+      <div class="info-card">
+        <h3>🧱 Key Layers</h3>
+        <div class="layer-grid">
+          <div class="layer-chip"
+               *ngFor="let l of layers"
+               [style.background]="l.color">
+            <span class="layer-icon">{{ l.icon }}</span>
+            <div>
+              <div class="layer-name">{{ l.name }}</div>
+              <div class="layer-desc">{{ l.desc }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column -->
+    <div class="diagram-col">
+
+      <!-- Diagram -->
+      <div class="diagram-card">
+        <h3>🖼️ CNN Architecture Diagram</h3>
+        <!-- Replace with an actual CNN architecture image -->
+        <img
+          src="https://miro.medium.com/max/2340/1*Fw-ehcNBR9byHtho-Rxbtw.gif"
+          alt="CNN Architecture Diagram"
+          class="diagram-img" />
+        <p class="diagram-caption">
+          Typical CNN pipeline: Input Image → Conv Layers → Pooling →
+          Fully Connected → Softmax Output.
+        </p>
+      </div>
+
+      <!-- Feature Hierarchy Visual -->
+      <div class="diagram-card">
+        <h3>📈 Feature Hierarchy</h3>
+        <div class="hierarchy">
+          <div class="h-step h1">
+            <span>Layer 1</span>
+            <div class="h-bar"></div>
+            <small>Edges & Colours</small>
+          </div>
+          <div class="h-arrow">▼</div>
+          <div class="h-step h2">
+            <span>Layer 2–3</span>
+            <div class="h-bar"></div>
+            <small>Textures & Shapes</small>
+          </div>
+          <div class="h-arrow">▼</div>
+          <div class="h-step h3">
+            <span>Layer 4–5</span>
+            <div class="h-bar"></div>
+            <small>Object Parts</small>
+          </div>
+          <div class="h-arrow">▼</div>
+          <div class="h-step h4">
+            <span>FC Layers</span>
+            <div class="h-bar"></div>
+            <small>Semantic Class</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architecture Comparison Table -->
+      <div class="diagram-card">
+        <h3>📊 Famous CNN Architectures</h3>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Year</th>
+              <th>Params</th>
+              <th>Top-5 Err</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let a of architectures">
+              <td><strong>{{ a.name }}</strong></td>
+              <td>{{ a.year }}</td>
+              <td>{{ a.params }}</td>
+              <td>{{ a.top5 }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>

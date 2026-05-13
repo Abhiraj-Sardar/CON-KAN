@@ -1,0 +1,113 @@
+<div class="info-wrap">
+
+  <div class="info-header kan-header">
+    <span class="header-icon">🔬</span>
+    <h2>Know KAN</h2>
+    <p>Kolmogorov–Arnold Networks — A New Paradigm</p>
+  </div>
+
+  <!-- Quick Facts -->
+  <div class="facts-strip">
+    <div class="fact-item" *ngFor="let f of facts">
+      <span class="fact-icon">{{ f.icon }}</span>
+      <div>
+        <div class="fact-label">{{ f.label }}</div>
+        <div class="fact-value">{{ f.value }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Grid -->
+  <div class="content-grid">
+
+    <!-- Left: Text blocks -->
+    <div class="text-blocks">
+
+      <div class="info-card">
+        <h3>📖 What is KAN?</h3>
+        <p>
+          KAN (Kolmogorov–Arnold Network) is a novel neural architecture
+          grounded in the <strong>Kolmogorov–Arnold representation theorem</strong>,
+          which proves that any continuous multivariate function
+          $ f(x_1, \ldots, x_n) $ can be decomposed as:
+        </p>
+        <div class="math-block">
+          f(x₁,…,xₙ) = Σ Φq( Σ φq,p(xp) )
+        </div>
+        <p>
+          KAN directly realises this decomposition as a trainable network,
+          placing <strong>learnable univariate functions on each edge</strong>
+          rather than fixed activations at nodes.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>⚙️ Architecture Details</h3>
+        <p>
+          Each KAN layer consists of a grid of
+          <strong>B-spline basis functions</strong> per edge,
+          whose control points are learned during back-propagation.
+          A KAN with width vector <em>[n₀, n₁, …, nₗ]</em> stacks
+          <em>l</em> such layers, each mapping its input through
+          <strong>n<sub>i</sub> × n<sub>i+1</sub></strong> trainable
+          univariate splines.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>✅ Strengths vs MLP</h3>
+        <ul class="styled-list">
+          <li>🔍 <strong>Interpretable</strong> — activations can be visualised and simplified</li>
+          <li>📐 <strong>Accurate</strong> — matches or beats MLP with fewer parameters</li>
+          <li>🧮 <strong>Symbolic</strong> — can distil learned functions into closed-form expressions</li>
+          <li>🌱 <strong>Continual learning</strong> — localised splines reduce catastrophic forgetting</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>⚠️ Current Limitations</h3>
+        <ul class="styled-list">
+          <li>🐢 Slower training than MLPs of comparable size</li>
+          <li>🖼️ Raw image tasks need CNN hybrid front-ends</li>
+          <li>📚 Tooling & community still maturing</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Right: Diagram + extras -->
+    <div class="diagram-col">
+
+      <div class="diagram-card">
+        <h3>🖼️ Architecture Diagram</h3>
+        <!-- Replace src with an actual KAN diagram image -->
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/560px-Colored_neural_network.svg.png"
+          alt="KAN Architecture Diagram"
+          class="diagram-img" />
+        <p class="diagram-caption">
+          Illustrative network topology — each edge carries a learnable
+          spline activation φ(x) rather than a static function.
+        </p>
+      </div>
+
+      <div class="diagram-card comparison-card">
+        <h3>🔁 KAN vs MLP at a Glance</h3>
+        <table class="compare-table">
+          <thead>
+            <tr><th>Feature</th><th>KAN</th><th>MLP</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Activation location</td><td>Edges</td><td>Nodes</td></tr>
+            <tr><td>Activation type</td><td>Learnable spline</td><td>Fixed (ReLU etc.)</td></tr>
+            <tr><td>Interpretability</td><td>High ✅</td><td>Low ❌</td></tr>
+            <tr><td>Parameter efficiency</td><td>High ✅</td><td>Medium</td></tr>
+            <tr><td>Image tasks (raw)</td><td>Limited ⚠️</td><td>Good ✅</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+</div>

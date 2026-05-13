@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[data-theme="light"]{
+  --purple:      #7c5cbf;
+  --pink:        #ff6b9d;
+  --mint:        #4ecdc4;
+  --yellow:      #ffd93d;
+  --peach:       #ffb347;
+  --light-bg:    #fef9f0;
+  --white:       #ffffff;
+  --text-dark:   #3a3a5c;
+  --text-mid:    #555577;
+  --shadow-soft: 0 8px 32px rgba(124,92,191,0.12);
+  --radius-lg:   28px;
+  --radius-md:   18px;
+  --radius-sm:   10px;
+}
+
+
+[data-theme="dark"] {
+  --purple:      #b39ddb;
+  --pink:        #f48fb1;
+  --mint:        #80cbc4;
+  --yellow:      #fff176;
+  --peach:       #ffcc80;
+  --light-bg:    #1a1a2e;
+  --white:       #2a2a3e;
+  --text-dark:   #e8e8f4;
+  --text-mid:    #b0b0cc;
+  --shadow-soft: 0 8px 32px rgba(0,0,0,0.4);
+  --radius-lg:   28px;
+  --radius-md:   18px;
+  --radius-sm:   10px;
+}
+
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  min-height: 100vh;
+  transition: background 2s;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 0.5px;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  background: #f3ecff;
+  color: var(--purple);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+
+/* Shared page animation */
+.page-enter {
+  animation: pageSlideIn 0.45s cubic-bezier(.4,0,.2,1) both;
+}
+
+@keyframes pageSlideIn {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+

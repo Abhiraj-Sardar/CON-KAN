@@ -1,0 +1,168 @@
+.info-wrap  { display: flex; flex-direction: column; gap: 36px; max-width: 1100px; margin: 0 auto; }
+
+/* ── Header ─────────────────────────── */
+.info-header {
+  border-radius: var(--radius-lg);
+  padding: 44px 36px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  animation: popIn 0.6s ease both;
+}
+.kan-header { background: linear-gradient(135deg, #f5e9ff, #e8d8ff, #fce4ff); }
+
+@keyframes popIn {
+  from { transform: scale(0.93); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+.header-icon { font-size: 3.5rem; display: block; margin-bottom: 10px; }
+.info-header h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--purple);
+  margin-bottom: 8px;
+}
+.info-header p { color: var(--text-mid); font-size: 1.05rem; }
+
+/* ── Facts Strip ─────────────────────── */
+.facts-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.fact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  box-shadow: 0 4px 14px rgba(124,92,191,0.09);
+  transition: transform 0.3s;
+  animation: slideUp 0.5s ease both;
+  min-width: 180px;
+}
+.fact-item:hover   { transform: translateY(-5px); }
+
+.fact-icon  { font-size: 1.6rem; }
+.fact-label { font-size: 0.75rem; color: #aaa; font-weight: 800; text-transform: uppercase; }
+.fact-value { font-size: 0.9rem;  color: var(--purple); font-weight: 700; }
+
+/* ── Content Grid ────────────────────── */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ── Info Cards ──────────────────────── */
+.text-blocks { display: flex; flex-direction: column; gap: 20px; }
+
+.info-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 26px 28px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: slideUp 0.55s ease both;
+  border-left: 5px solid var(--purple);
+}
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(124,92,191,0.14);
+}
+.info-card h3 {
+  font-size: 1.2rem;
+  color: var(--purple);
+  margin-bottom: 12px;
+}
+.info-card p { color: var(--text-mid); line-height: 1.75; margin-bottom: 10px; }
+
+.math-block {
+  background: #f3ecff;
+  border-radius: var(--radius-sm);
+  padding: 12px 18px;
+  font-family: 'Courier New', monospace;
+  color: var(--purple);
+  font-size: 0.95rem;
+  margin: 12px 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.styled-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 0;
+}
+.styled-list li { color: var(--text-mid); font-size: 0.93rem; line-height: 1.6; }
+
+/* ── Diagram Column ──────────────────── */
+.diagram-col { display: flex; flex-direction: column; gap: 20px; }
+
+.diagram-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 26px 24px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+  animation: slideUp 0.6s ease both;
+}
+.diagram-card h3 {
+  font-size: 1.15rem;
+  color: var(--purple);
+  margin-bottom: 16px;
+}
+
+.diagram-img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.35s;
+}
+.diagram-img:hover { transform: scale(1.02); }
+
+.diagram-caption {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: #999;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ── Compare Table ───────────────────── */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.compare-table th {
+  background: var(--purple);
+  color: var(--white);
+  padding: 10px 12px;
+  text-align: left;
+  font-family: 'Fredoka One', cursive;
+  font-size: 0.95rem;
+}
+.compare-table th:first-child { border-radius: 10px 0 0 0; }
+.compare-table th:last-child  { border-radius: 0 10px 0 0; }
+
+.compare-table td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #f0eaff;
+  color: var(--text-mid);
+}
+.compare-table tr:nth-child(even) td { background: #faf6ff; }
+.compare-table tr:hover td           { background: #f3ecff; }
+
+@keyframes slideUp {
+  from { transform: translateY(32px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .content-grid { grid-template-columns: 1fr; }
+}

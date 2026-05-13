@@ -1,0 +1,85 @@
+<div class="app-shell">
+
+  <!-- ╔══════════════ NAVBAR ══════════════╗ -->
+  <nav class="navbar">
+    <div class="nav-inner">
+
+      <div class="logo" (click)="navigate('home')">
+        🐾 CON<span class="logo-vs">-</span>KAN
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" (click)="toggleMenu()"
+              [class.open]="menuOpen" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Links -->
+      <ul class="nav-links" [class.nav-open]="menuOpen">
+
+        <li>
+          <button class="nav-btn"
+                  [class.active]="activePage === 'test'"
+                  (click)="navigate('test')">
+            🧪 Test The Model
+          </button>
+        </li>
+
+        <li>
+          <button class="nav-btn"
+                  [class.active]="activePage === 'kan'"
+                  (click)="navigate('kan')">
+            🔬 Know KAN
+          </button>
+        </li>
+
+        <li>
+          <button class="nav-btn"
+                  [class.active]="activePage === 'cnn'"
+                  (click)="navigate('cnn')">
+            🧠 About CNN
+          </button>
+        </li>
+
+        <li>
+          <a class="nav-btn link-external"
+             href="https://github.com/your-repo"
+             target="_blank" rel="noopener">
+            🐙 GitHub
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-btn link-external issue-btn"
+             href="https://github.com/your-repo/issues"
+             target="_blank" rel="noopener">
+            🐛 Raise Issue
+          </a>
+        </li>
+
+      </ul>
+
+      
+      <button id="t-btn" 
+      (click)="changeMode()"
+      >toggle</button>
+    </div>
+  </nav>
+  <!-- ╚════════════════════════════════════╝ -->
+
+  <!-- ╔══════════════ CONTENT ══════════════╗ -->
+  <main class="main-content">
+    <app-home        *ngIf="activePage === 'home'" class="page-enter"></app-home>
+    <app-test-model  *ngIf="activePage === 'test'" class="page-enter"></app-test-model>
+    <app-know-kan    *ngIf="activePage === 'kan'"  class="page-enter"></app-know-kan>
+    <app-about-cnn   *ngIf="activePage === 'cnn'"  class="page-enter"></app-about-cnn>
+  </main>
+  <!-- ╚════════════════════════════════════╝ -->
+
+  <!-- ╔══════════════ FOOTER ══════════════╗ -->
+  <footer class="footer">
+    <p>🐾 CON - KAN Explorer &copy; 2024 &nbsp;|&nbsp; Built with ❤️ &amp; Angular 13</p>
+  </footer>
+  <!-- ╚════════════════════════════════════╝ -->
+
+</div>
