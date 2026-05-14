@@ -108,7 +108,7 @@ first clone the repository to local system
 <div align="center">
   <figure>
     <a href="https://excalidraw.com" target="_blank" rel="noopener">
-      <img src="./CNN_Cat_Dog_updated.png" alt="Product showcase" />
+      <img src="https://github.com/Abhiraj-Sardar/CON-KAN/blob/master/Resources/CNN_Cat_Dog_updated.png" alt="Product showcase" />
     </a>
     <figcaption>
       <p align="center">
