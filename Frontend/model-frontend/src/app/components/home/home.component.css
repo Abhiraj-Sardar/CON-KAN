@@ -34,7 +34,7 @@
 
 .hero-title {
   font-size: clamp(2.8rem, 6vw, 4.4rem);
-  color: var(--purple);
+  color: var(--blue);
   line-height: 1;
   margin-bottom: 18px;
 }
