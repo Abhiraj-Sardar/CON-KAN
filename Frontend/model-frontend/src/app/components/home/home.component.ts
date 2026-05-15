@@ -32,18 +32,6 @@ export class HomeComponent {
       desc:  'Leverage pre-trained CNN weights for rapid fine-tuning with minimal data.',
       color: '#e8f5e9'
     },
-    {
-      icon: '⚡',
-      title: 'Efficient Inference',
-      desc:  'Optimised architectures run predictions in milliseconds on modern hardware.',
-      color: '#fce4ec'
-    },
-    {
-      icon: '🧮',
-      title: 'Mathematical Elegance',
-      desc:  'KAN naturally encodes symbolic and functional relationships in its structure.',
-      color: '#e3f2fd'
-    }
   ];
 
   steps = [

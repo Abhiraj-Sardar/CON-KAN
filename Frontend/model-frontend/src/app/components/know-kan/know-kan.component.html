@@ -1,10 +1,44 @@
 <div class="info-wrap">
 
-  <div class="info-header kan-header">
-    <span class="header-icon">🔬</span>
-    <h2>Know KAN</h2>
-    <p>Kolmogorov–Arnold Networks — A New Paradigm</p>
+  <div class="kan-container">
+
+    <!-- LEFT: Information Panel -->
+    <div class="kan-info">
+      <span class="badge">Neural Architecture</span>
+      <h1>Kolmogorov–Arnold <span>Networks</span></h1>
+      <div class="divider"></div>
+
+      <p>
+        <strong>KAN</strong> (Kolmogorov-Arnold Networks) is a novel neural network architecture
+        inspired by the <em>Kolmogorov-Arnold representation theorem</em>. Unlike traditional
+        MLPs that place fixed activation functions on nodes, KANs place
+        <strong>learnable activation functions on edges</strong>.
+      </p>
+
+      <div class="tag-row">
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Spline Functions</span>
+        <span class="tag">Interpretability</span>
+        <span class="tag">AI Research</span>
+        <span class="tag">B-Splines</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: Image Panel -->
+    <div class="kan-image">
+      <span class="image-label">KAN Architecture Diagram</span>
+      <img
+        src="../../../kan_classification.gif"
+        alt="Kolmogorov-Arnold Network Architecture Diagram"
+      />
+      <p class="image-caption">
+        A KAN network where learnable univariate functions are placed on each edge,
+        replacing traditional fixed activation functions at nodes.
+      </p>
+    </div>
+
   </div>
+
 
   <!-- Quick Facts -->
   <div class="facts-strip">
@@ -17,97 +51,127 @@
     </div>
   </div>
 
-  <!-- Main Grid -->
-  <div class="content-grid">
 
-    <!-- Left: Text blocks -->
-    <div class="text-blocks">
+   <section class="section">
+    <h2 class="section-title"></h2>
 
-      <div class="info-card">
-        <h3>📖 What is KAN?</h3>
-        <p>
-          KAN (Kolmogorov–Arnold Network) is a novel neural architecture
-          grounded in the <strong>Kolmogorov–Arnold representation theorem</strong>,
-          which proves that any continuous multivariate function
-          $ f(x_1, \ldots, x_n) $ can be decomposed as:
-        </p>
-        <div class="math-block">
-          f(x₁,…,xₙ) = Σ Φq( Σ φq,p(xp) )
+    <div class="model-cards">
+
+      <div class="mcard mcard-cnn">
+        <div class="mcard-top">
+          <span class="mcard-icon">📉</span>
+          <h3>Spline As an Activation Function</h3>
         </div>
         <p>
-          KAN directly realises this decomposition as a trainable network,
-          placing <strong>learnable univariate functions on each edge</strong>
-          rather than fixed activations at nodes.
+          <strong>Less Loss</strong> Means more accurate model.
         </p>
+        <div class="mcard-tag">Proven Backbone · Since 1998</div>
       </div>
 
-      <div class="info-card">
-        <h3>⚙️ Architecture Details</h3>
+      <div class="mcard mcard-loss">
+        <!-- <div class="mcard-top">
+          <span class="mcard-icon">🔬</span>
+          <h3>KAN</h3>
+        </div>
         <p>
-          Each KAN layer consists of a grid of
-          <strong>B-spline basis functions</strong> per edge,
-          whose control points are learned during back-propagation.
-          A KAN with width vector <em>[n₀, n₁, …, nₗ]</em> stacks
-          <em>l</em> such layers, each mapping its input through
-          <strong>n<sub>i</sub> × n<sub>i+1</sub></strong> trainable
-          univariate splines.
+          <strong>Kolmogorov–Arnold Networks</strong> replace conventional
+          node-level activation functions with <em>learnable, spline-based
+          functions on edges</em>. Grounded in the Kolmogorov–Arnold
+          representation theorem, KAN offers unprecedented interpretability
+          alongside competitive accuracy.
         </p>
+        <div class="mcard-tag">New Architecture · 2024</div> -->
+        <!-- <img src="../../../modelcomparisonchart.png" alt="demo"/> -->
       </div>
+      
+      
 
-      <div class="info-card">
-        <h3>✅ Strengths vs MLP</h3>
-        <ul class="styled-list">
-          <li>🔍 <strong>Interpretable</strong> — activations can be visualised and simplified</li>
-          <li>📐 <strong>Accurate</strong> — matches or beats MLP with fewer parameters</li>
-          <li>🧮 <strong>Symbolic</strong> — can distil learned functions into closed-form expressions</li>
-          <li>🌱 <strong>Continual learning</strong> — localised splines reduce catastrophic forgetting</li>
-        </ul>
-      </div>
 
-      <div class="info-card">
-        <h3>⚠️ Current Limitations</h3>
-        <ul class="styled-list">
-          <li>🐢 Slower training than MLPs of comparable size</li>
-          <li>🖼️ Raw image tasks need CNN hybrid front-ends</li>
-          <li>📚 Tooling & community still maturing</li>
-        </ul>
-      </div>
+
 
     </div>
+  </section>
 
-    <!-- Right: Diagram + extras -->
-    <div class="diagram-col">
+  <h3 style="text-align:center;">Test by Yourself</h3>
 
-      <div class="diagram-card">
-        <h3>🖼️ Architecture Diagram</h3>
-        <!-- Replace src with an actual KAN diagram image -->
+  <div class="browser-wrapper">
+
+    <!-- Title Bar with Traffic Lights -->
+    <div class="browser-title-bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="browser-tab-bar">
+
+      <!-- Active Tab -->
+      <div class="browser-tab active">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/560px-Colored_neural_network.svg.png"
-          alt="KAN Architecture Diagram"
-          class="diagram-img" />
-        <p class="diagram-caption">
-          Illustrative network topology — each edge carries a learnable
-          spline activation φ(x) rather than a static function.
-        </p>
+          class="tab-favicon"
+          src="https://www.google.com/s2/favicons?domain=wikipedia.org"
+          alt="favicon"
+        />
+        <span>KAN — Wikipedia</span>
+        <span class="tab-close">&#x2715;</span>
       </div>
 
-      <div class="diagram-card comparison-card">
-        <h3>🔁 KAN vs MLP at a Glance</h3>
-        <table class="compare-table">
-          <thead>
-            <tr><th>Feature</th><th>KAN</th><th>MLP</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Activation location</td><td>Edges</td><td>Nodes</td></tr>
-            <tr><td>Activation type</td><td>Learnable spline</td><td>Fixed (ReLU etc.)</td></tr>
-            <tr><td>Interpretability</td><td>High ✅</td><td>Low ❌</td></tr>
-            <tr><td>Parameter efficiency</td><td>High ✅</td><td>Medium</td></tr>
-            <tr><td>Image tasks (raw)</td><td>Limited ⚠️</td><td>Good ✅</td></tr>
-          </tbody>
-        </table>
+      <!-- Inactive Tab -->
+      <div class="browser-tab inactive">
+        <img
+          class="tab-favicon"
+          src="https://www.google.com/s2/favicons?domain=github.com"
+          alt="favicon"
+        />
+        <span>GitHub</span>
+        <span class="tab-close">&#x2715;</span>
       </div>
+
+      <!-- New Tab Button -->
+      <button class="new-tab-btn" title="New Tab">&#43;</button>
 
     </div>
+
+    <!-- Address Bar -->
+    <div class="browser-address-bar">
+      <button class="browser-nav-btn" title="Back">&#8592;</button>
+      <button class="browser-nav-btn" title="Forward">&#8594;</button>
+      <button class="browser-nav-btn" title="Reload">&#8635;</button>
+
+      <div class="address-input-wrapper">
+        <span class="lock-icon">&#128274;</span>
+        <input
+          type="text"
+          value="https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Arnold_Networks"
+          readonly
+        />
+      </div>
+
+      <button class="browser-menu-btn" title="Menu">&#8942;</button>
+    </div>
+
+    <!-- IFrame Content -->
+    <iframe
+      class="browser-content"
+      src="https://b-spline-site.onrender.com/KAN_visualization.html"
+      title="KAN Wikipedia Page"
+      sandbox="allow-scripts allow-same-origin"
+    ></iframe>
 
   </div>
+  <!-- Main Grid -->
+  <section class="section">
+    <h2 class="section-title">✨ Advantages</h2>
+
+    <div class="adv-grid">
+      <div class="adv-card"
+           *ngFor="let a of advantages"
+           [style.background]="a.color">
+        <span class="adv-icon">{{ a.icon }}</span>
+        <h4>{{ a.title }}</h4>
+        <p>{{ a.desc }}</p>
+      </div>
+    </div>
+  </section>
 </div>
