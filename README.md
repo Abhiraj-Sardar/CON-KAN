@@ -103,6 +103,10 @@ first clone the repository to local system
 
 - 🖲️ Backend
 
+
+
+## Application Architecture
+
 ## Model Architecture
 
 <div align="center">
