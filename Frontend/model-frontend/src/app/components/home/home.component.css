@@ -277,11 +277,11 @@
       position: relative;
       width: 100%;
       height: 500px;
-      background: linear-gradient(135deg, #80a1c4, #1b2a4a);
+      /* background: linear-gradient(135deg, #80a1c4, #1b2a4a); */
       border-radius: 24px;
       overflow: hidden;
-      border: 1px solid rgba(255, 224, 100, 0.15);
-      box-shadow: 0 0 60px rgba(217, 131, 19, 0.1);
+      /* border: 1px solid rgba(255, 224, 100, 0.15); */
+      /* box-shadow: 0 0 60px rgba(217, 131, 19, 0.1); */
     }
     
     .bubble-center {
@@ -306,7 +306,7 @@
       justify-content: center;
       text-align: center;
       padding: 16px;
-      color: #e8f4ff;
+      color: var(--white);
       font-size: 13px;
       font-weight: 600;
       letter-spacing: 0.4px;
@@ -329,13 +329,13 @@
         rgba(80, 130, 220, 0.15)
       );
       border: 1.5px solid rgba(150, 190, 255, 0.4);
-      box-shadow: 0 0 12px rgba(80, 130, 255, 0.25);
+      box-shadow: 0 0 12px rgba(72, 113, 217, 0.607);
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: 8px;
-      color: #cce0ff;
+      color: var(--white);
       font-size: 10px;
       font-weight: 500;
       line-height: 1.3;
@@ -350,4 +350,5 @@
     .b5  { width: 65px;  height: 65px;  top: 5%;   left: 38%;  animation-duration: 9s;  animation-delay: 1.5s;  }
     .b6  { width: 50px;  height: 50px;  top: 78%;  left: 38%;  animation-duration: 6.5s;animation-delay: 0.8s;  }
     .b7  { width: 70px;  height: 70px;  top: 35%;  left: 82%;  animation-duration: 7.5s;animation-delay: 3s;    }
-    .b8  { width: 58px;  height: 58px;  top: 42%;  left: 2%;   animation-duration: 8.5s;animation-delay: 2.5s;  }
+    .b8  { width: 68px;  height: 68px;  top: 42%;  left: 2%;   animation-duration: 8.5s;animation-delay: 2.5s;  }
+    

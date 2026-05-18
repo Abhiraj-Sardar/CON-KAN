@@ -79,21 +79,22 @@
   <!-- ╚══════════════════╝ -->
 
 
+  <h3 style="text-align: center;color:var(--purple);font-size: var(--radius-lg);">Number of Parameters</h3>
    <!-- Parameters -->
   <section class="section bubble-container">
 
     <!-- Center Bubble -->
     <div class="bubble-center">
-      SMS Group<br/>Innovation Hub
+      Model Parameters
     </div>
 
     <!-- Small Floating Bubbles -->
-    <div class="bubble-small b1">Steel Processing</div>
-    <div class="bubble-small b2">Hot Rolling</div>
-    <div class="bubble-small b3">Plant Design</div>
-    <div class="bubble-small b4">Automation</div>
-    <div class="bubble-small b5">Quality Control</div>
-    <div class="bubble-small b6">Energy Efficiency</div>
+    <div class="bubble-small b1">30 Epoch</div>
+    <div class="bubble-small b2">Adam Optimizer</div>
+    <div class="bubble-small b3">0.001 Learning Rate</div>
+    <div class="bubble-small b4">3x3 Kernel</div>
+    <div class="bubble-small b5">Stride 1</div>
+    <div class="bubble-small b6">3 ConV</div>
     <div class="bubble-small b7">Cold Rolling</div>
     <div class="bubble-small b8">Digitalization</div>
 
@@ -133,8 +134,6 @@
         <div class="mcard-tag">New Architecture · 2024</div> -->
         <!-- <img src="../../../modelcomparisonchart.png" alt="demo"/> -->
       </div>
-      
-      
 
 
 
@@ -147,9 +146,7 @@
     <h2 class="section-title">✨ Advantages</h2>
 
     <div class="adv-grid">
-      <div class="adv-card"
-           *ngFor="let a of advantages"
-           [style.background]="a.color">
+      <div class="adv-card" *ngFor="let a of advantages" [style.background]="a.color">
         <span class="adv-icon">{{ a.icon }}</span>
         <h4>{{ a.title }}</h4>
         <p>{{ a.desc }}</p>
@@ -157,6 +154,7 @@
     </div>
   </section>
   <!-- ╚══════════════════╝ -->
+   
 
 
  

@@ -16,7 +16,7 @@ export class TestModelComponent {
   errorMsg     : string | null     = null;
   isDragging   : boolean           = false;
 
-  private readonly API = 'http://localhost:8000/predict';
+  private readonly API = 'https://kan-fast-api.onrender.com/api/v1/predict';
 
   constructor(private http: HttpClient) {}
 

@@ -41,4 +41,6 @@ export class KnowKanComponent {
     { icon: '📉', label: 'Parameters',  value: 'Fewer than MLP for same accuracy'},
     { icon: '🎯', label: 'Strength',    value: 'Symbolic regression & science'   }
   ];
+
+  
 }

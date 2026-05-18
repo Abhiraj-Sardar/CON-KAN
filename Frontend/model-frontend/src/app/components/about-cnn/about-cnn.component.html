@@ -1,13 +1,46 @@
 <div class="info-wrap">
 
-  <!-- ╔══════ HEADER ══════╗ -->
-  <div class="info-header cnn-header">
-    <span class="header-icon">🧠</span>
-    <h2>About CNN</h2>
-    <p>Convolutional Neural Networks — The Backbone of Computer Vision</p>
+  <div class="kan-container">
+
+    <!-- LEFT: Information Panel -->
+    <div class="kan-info">
+      <span class="badge">Neural Architecture</span>
+      <h1>Convolutional Neural <span>Networks</span></h1>
+      <div class="divider"></div>
+
+      <p>
+        <strong>KAN</strong> (Kolmogorov-Arnold Networks) is a novel neural network architecture
+        inspired by the <em>Kolmogorov-Arnold representation theorem</em>. Unlike traditional
+        MLPs that place fixed activation functions on nodes, KANs place
+        <strong>learnable activation functions on edges</strong>.
+      </p>
+
+      <div class="tag-row">
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Spline Functions</span>
+        <span class="tag">Interpretability</span>
+        <span class="tag">AI Research</span>
+        <span class="tag">B-Splines</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: Image Panel -->
+    <div class="kan-image">
+      <span class="image-label">KAN Architecture Diagram</span>
+      <img
+        src="../../../cnn_classification.gif"
+        alt="Kolmogorov-Arnold Network Architecture Diagram"
+      />
+      <p class="image-caption">
+        A KAN network where learnable univariate functions are placed on each edge,
+        replacing traditional fixed activation functions at nodes.
+      </p>
+    </div>
+
   </div>
 
-  <!-- ╔══════ QUICK FACTS ══════╗ -->
+
+  <!-- Quick Facts -->
   <div class="facts-strip">
     <div class="fact-item" *ngFor="let f of facts">
       <span class="fact-icon">{{ f.icon }}</span>
@@ -18,133 +51,169 @@
     </div>
   </div>
 
-  <!-- ╔══════ MAIN GRID ══════╗ -->
-  <div class="content-grid">
 
-    <!-- Left Column -->
-    <div class="text-blocks">
+   <section class="section">
+    <h2 class="section-title"></h2>
 
-      <div class="info-card">
-        <h3>📖 What is a CNN?</h3>
-        <p>
-          A <strong>Convolutional Neural Network</strong> is a specialised
-          deep learning architecture designed to process data with a
-          known <em>grid-like topology</em> — most famously 2-D images.
-          CNNs exploit three key ideas:
-        </p>
-        <ul class="styled-list">
-          <li>🔲 <strong>Local connectivity</strong> — each neuron sees only a small receptive field</li>
-          <li>🔁 <strong>Weight sharing</strong> — the same filter scans the entire input</li>
-          <li>📐 <strong>Translation invariance</strong> — pooling makes features position-agnostic</li>
-        </ul>
-      </div>
+    <div class="model-cards">
 
-      <div class="info-card">
-        <h3>⚙️ How Convolution Works</h3>
-        <p>
-          A filter (kernel) of size <em>k × k</em> is slid across the
-          input with stride <em>s</em>, computing an element-wise dot
-          product at every position to produce an <strong>activation / feature map</strong>.
-          For an input of size <em>W × H × C</em> and <em>F</em> filters:
-        </p>
-        <div class="math-block">
-          Output W = (W − k + 2p) / s + 1
+      <div class="mcard mcard-cnn">
+        <div class="mcard-top">
+          <span class="mcard-icon">📉</span>
+          <h3>Spline As an Activation Function</h3>
         </div>
         <p>
-          Multiple stacked convolutional layers build a
-          <strong>hierarchical feature extractor</strong> — from edges and
-          blobs in early layers to complex object parts in deeper layers.
+          <strong>Less Loss</strong> Means more accurate model.
         </p>
+        <div class="mcard-tag">Proven Backbone · Since 1998</div>
       </div>
 
-      <!-- Layer Cards -->
-      <div class="info-card">
-        <h3>🧱 Key Layers</h3>
-        <div class="layer-grid">
-          <div class="layer-chip"
-               *ngFor="let l of layers"
-               [style.background]="l.color">
-            <span class="layer-icon">{{ l.icon }}</span>
-            <div>
-              <div class="layer-name">{{ l.name }}</div>
-              <div class="layer-desc">{{ l.desc }}</div>
-            </div>
-          </div>
+      <div class="mcard mcard-loss">
+        <!-- <div class="mcard-top">
+          <span class="mcard-icon">🔬</span>
+          <h3>KAN</h3>
         </div>
+        <p>
+          <strong>Kolmogorov–Arnold Networks</strong> replace conventional
+          node-level activation functions with <em>learnable, spline-based
+          functions on edges</em>. Grounded in the Kolmogorov–Arnold
+          representation theorem, KAN offers unprecedented interpretability
+          alongside competitive accuracy.
+        </p>
+        <div class="mcard-tag">New Architecture · 2024</div> -->
+        <!-- <img src="../../../modelcomparisonchart.png" alt="demo"/> -->
       </div>
+      
+      
+
+
+
 
     </div>
+  </section>
 
-    <!-- Right Column -->
-    <div class="diagram-col">
+  <section class="section">
+    <h2 class="section-title"></h2>
 
-      <!-- Diagram -->
-      <div class="diagram-card">
-        <h3>🖼️ CNN Architecture Diagram</h3>
-        <!-- Replace with an actual CNN architecture image -->
+    <div class="model-cards">
+
+      <div class="mcard mcard-pooling">
+        <!-- <div class="mcard-top">
+          <span class="mcard-icon">🔬</span>
+          <h3>KAN</h3>
+        </div>
+        <p>
+          <strong>Kolmogorov–Arnold Networks</strong> replace conventional
+          node-level activation functions with <em>learnable, spline-based
+          functions on edges</em>. Grounded in the Kolmogorov–Arnold
+          representation theorem, KAN offers unprecedented interpretability
+          alongside competitive accuracy.
+        </p>
+        <div class="mcard-tag">New Architecture · 2024</div> -->
+        <!-- <img src="../../../modelcomparisonchart.png" alt="demo"/> -->
+      </div>
+      
+      <div class="mcard mcard-cnn">
+        <div class="mcard-top">
+          <span class="mcard-icon">📉</span>
+          <h3>Spline As an Activation Function</h3>
+        </div>
+        <p>
+          <strong>Less Loss</strong> Means more accurate model.
+        </p>
+        <div class="mcard-tag">Proven Backbone · Since 1998</div>
+      </div>
+
+      
+      
+      
+
+
+
+
+    </div>
+  </section>
+
+  <h3 style="text-align:center;">Test by Yourself</h3>
+
+  <div class="browser-wrapper">
+
+    <!-- Title Bar with Traffic Lights -->
+    <div class="browser-title-bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="browser-tab-bar">
+
+      <!-- Active Tab -->
+      <div class="browser-tab active">
         <img
-          src="https://miro.medium.com/max/2340/1*Fw-ehcNBR9byHtho-Rxbtw.gif"
-          alt="CNN Architecture Diagram"
-          class="diagram-img" />
-        <p class="diagram-caption">
-          Typical CNN pipeline: Input Image → Conv Layers → Pooling →
-          Fully Connected → Softmax Output.
-        </p>
+          class="tab-favicon"
+          src="https://www.google.com/s2/favicons?domain=wikipedia.org"
+          alt="favicon"
+        />
+        <span>KAN — Wikipedia</span>
+        <span class="tab-close">&#x2715;</span>
       </div>
 
-      <!-- Feature Hierarchy Visual -->
-      <div class="diagram-card">
-        <h3>📈 Feature Hierarchy</h3>
-        <div class="hierarchy">
-          <div class="h-step h1">
-            <span>Layer 1</span>
-            <div class="h-bar"></div>
-            <small>Edges & Colours</small>
-          </div>
-          <div class="h-arrow">▼</div>
-          <div class="h-step h2">
-            <span>Layer 2–3</span>
-            <div class="h-bar"></div>
-            <small>Textures & Shapes</small>
-          </div>
-          <div class="h-arrow">▼</div>
-          <div class="h-step h3">
-            <span>Layer 4–5</span>
-            <div class="h-bar"></div>
-            <small>Object Parts</small>
-          </div>
-          <div class="h-arrow">▼</div>
-          <div class="h-step h4">
-            <span>FC Layers</span>
-            <div class="h-bar"></div>
-            <small>Semantic Class</small>
-          </div>
-        </div>
+      <!-- Inactive Tab -->
+      <div class="browser-tab inactive">
+        <img
+          class="tab-favicon"
+          src="https://www.google.com/s2/favicons?domain=github.com"
+          alt="favicon"
+        />
+        <span>GitHub</span>
+        <span class="tab-close">&#x2715;</span>
       </div>
 
-      <!-- Architecture Comparison Table -->
-      <div class="diagram-card">
-        <h3>📊 Famous CNN Architectures</h3>
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Model</th>
-              <th>Year</th>
-              <th>Params</th>
-              <th>Top-5 Err</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let a of architectures">
-              <td><strong>{{ a.name }}</strong></td>
-              <td>{{ a.year }}</td>
-              <td>{{ a.params }}</td>
-              <td>{{ a.top5 }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <!-- New Tab Button -->
+      <button class="new-tab-btn" title="New Tab">&#43;</button>
 
     </div>
+
+    <!-- Address Bar -->
+    <div class="browser-address-bar">
+      <button class="browser-nav-btn" title="Back">&#8592;</button>
+      <button class="browser-nav-btn" title="Forward">&#8594;</button>
+      <button class="browser-nav-btn" title="Reload">&#8635;</button>
+
+      <div class="address-input-wrapper">
+        <span class="lock-icon">&#128274;</span>
+        <input
+          type="text"
+          value="https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Arnold_Networks"
+          readonly
+        />
+      </div>
+
+      <button class="browser-menu-btn" title="Menu">&#8942;</button>
+    </div>
+
+    <!-- IFrame Content -->
+    <iframe
+      class="browser-content"
+      src="https://b-spline-site.onrender.com/KAN_visualization.html"
+      title="KAN Wikipedia Page"
+      sandbox="allow-scripts allow-same-origin"
+    ></iframe>
+
   </div>
+  <!-- Main Grid -->
+  <section class="section">
+    <h2 class="section-title">✨ Advantages</h2>
+
+    <div class="adv-grid">
+      <div class="adv-card"
+           *ngFor="let a of advantages"
+           [style.background]="a.color">
+        <span class="adv-icon">{{ a.icon }}</span>
+        <h4>{{ a.title }}</h4>
+        <p>{{ a.desc }}</p>
+      </div>
+    </div>
+  </section>
 </div>
