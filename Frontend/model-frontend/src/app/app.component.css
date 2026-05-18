@@ -124,9 +124,10 @@
 .footer {
   text-align: center;
   padding: 22px 20px;
-  background: linear-gradient(135deg, #d4f5eb 0%, #ffe0f7 100%);
+  /* background: linear-gradient(135deg, var(--black) 0%, #ffe0f7 100%); */
+  background-color: var(--black);
   font-family: 'Fredoka One', cursive;
-  color: var(--purple);
+  color: var(--white);
   font-size: 1rem;
   margin-top: auto;
 }

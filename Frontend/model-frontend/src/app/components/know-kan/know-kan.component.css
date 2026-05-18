@@ -65,7 +65,7 @@
     .kan-info {
       flex: 1;
       padding: 48px 40px;
-      background: linear-gradient(135deg, #1a2a4a 0%, #0d3b6e 100%);
+      /* background: linear-gradient(135deg, #1a2a4a 0%, #0d3b6e 100%); */
       color: #ffffff;
       display: flex;
       flex-direction: column;
@@ -75,7 +75,7 @@
 
     .kan-info .badge {
       display: inline-block;
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: var(--black);
       color: #a8d4ff;
       font-size: 12px;
       font-weight: 600;
@@ -94,13 +94,13 @@
     }
 
     .kan-info h1 span {
-      color: #5dade2;
+      color: var(--blue);
     }
 
     .kan-info p {
       font-size: 15px;
       line-height: 1.8;
-      color: #c8ddf0;
+      color: var(--white);
     }
 
     .kan-info .divider {
@@ -148,9 +148,9 @@
     }
 
     .kan-info .tag {
-      background-color: rgba(93, 173, 226, 0.2);
-      border: 1px solid rgba(93, 173, 226, 0.4);
-      color: #a8d4ff;
+      background-color: var(--blue);
+      border: 1px solid var(--white);
+      color: var(--white);
       font-size: 12px;
       padding: 4px 12px;
       border-radius: 12px;
@@ -213,7 +213,7 @@
 
 .section-title {
   font-size: clamp(1.7rem, 3vw, 2.2rem);
-  color: var(--purple);
+  color: var(--blue);
   text-align: center;
 }
 
@@ -267,7 +267,7 @@
   margin-bottom: 16px;
 }
 .mcard-icon { font-size: 2.4rem; }
-.mcard h3   { font-size: 1.8rem; color: var(--purple); }
+.mcard h3   { font-size: 1.8rem; color: var(--blue); }
 
 .mcard p { color: var(--text-mid); line-height: 1.75; margin-bottom: 16px; }
 

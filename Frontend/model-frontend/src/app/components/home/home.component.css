@@ -23,7 +23,7 @@
 .hero-chip {
   display: inline-block;
   background: rgba(124,92,191,0.12);
-  color: var(--purple);
+  color: var(--black);
   font-weight: 800;
   font-size: 0.85rem;
   padding: 5px 16px;
@@ -34,7 +34,7 @@
 
 .hero-title {
   font-size: clamp(2.8rem, 6vw, 4.4rem);
-  color: var(--purple);
+  color: var(--blue);
   line-height: 1;
   margin-bottom: 18px;
 }
@@ -118,7 +118,8 @@
 
 .section-title {
   font-size: clamp(1.7rem, 3vw, 2.2rem);
-  color: var(--purple);
+  color: var(--blue);
+  /* -webkit-text-stroke: 0.5px var(--white); */
   text-align: center;
 }
 
@@ -172,7 +173,7 @@
   margin-bottom: 16px;
 }
 .mcard-icon { font-size: 2.4rem; }
-.mcard h3   { font-size: 1.8rem; color: var(--purple); }
+.mcard h3   { font-size: 1.8rem; color: var(--blue); }
 
 .mcard p { color: var(--text-mid); line-height: 1.75; margin-bottom: 16px; }
 
