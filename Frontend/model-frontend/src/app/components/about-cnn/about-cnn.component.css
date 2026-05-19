@@ -84,6 +84,7 @@
       padding: 6px 14px;
       border-radius: 20px;
       width: fit-content;
+      border: 2px solid var(--image-bg);
     }
 
     .kan-info h1 {
@@ -100,7 +101,7 @@
     .kan-info p {
       font-size: 15px;
       line-height: 1.8;
-      color: var(--white);
+      color: var(--image-bg);
     }
 
     .kan-info .divider {
