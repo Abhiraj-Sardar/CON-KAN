@@ -48,7 +48,7 @@
 
 <div align="center">
   <figure>
-    <a href="conkan.netlify.app/" target="_blank" rel="noopener">
+    <a href="https://conkan.netlify.app/" target="_blank" rel="noopener">
       <img src="https://github.com/Abhiraj-Sardar/CON-KAN/blob/master/Resources/landingpage-light.png" alt="Product showcase" />
     </a>
     <figcaption>
