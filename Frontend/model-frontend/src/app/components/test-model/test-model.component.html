@@ -10,6 +10,61 @@
 
   <div class="tm-layout">
 
+        <!-- ╔═══ RESULT PANEL ═══╗ -->
+    <div class="result-panel">
+      <h4 style="color:var(--blue);">CNN Prediction</h4>
+      <!-- Idle state -->
+      <div class="result-idle" *ngIf="!prediction && !isLoading && !errorMsg">
+        <span class="idle-icon">🤔</span>
+        <p style="color:#ffffff;">Your prediction result will appear here after uploading an image.</p>
+      </div>
+
+      <!-- Loading state -->
+      <div class="result-loading" *ngIf="isLoading">
+        <div class="spinner"></div>
+        <p>Crunching pixels…</p>
+      </div>
+
+      <!-- Success state -->
+      <div class="result-box"
+           *ngIf="prediction && !isLoading"
+           [style.background]="resultGradient">
+
+        <div class="result-animal">{{ resultEmoji }}</div>
+        <h3 class="result-label">It's a <strong>{{ prediction | titlecase }}</strong>!</h3>
+
+        <div class="confidence-bar" *ngIf="confidence !== null">
+          <div class="conf-label">
+            Confidence: <strong>{{ (confidence * 100).toFixed(1) }}%</strong>
+          </div>
+          <div class="conf-track">
+            <div class="conf-fill"
+                 [style.width.%]="confidence * 100"
+                 [style.background]="prediction.toLowerCase() === 'cat'
+                   ? 'linear-gradient(90deg, #ff6b9d, #ff9dc6)'
+                   : 'linear-gradient(90deg, #ffb347, #ffd080)'">
+            </div>
+          </div>
+        </div>
+
+        <button class="try-again-btn" (click)="clearImage()">
+          🔄 Try Another
+        </button>
+
+      </div>
+
+      <!-- Error state -->
+      <div class="result-error" *ngIf="errorMsg && !isLoading">
+        <span>⚠️</span>
+        <p>{{ errorMsg }}</p>
+        <button class="try-again-btn err-retry" (click)="submitImage()">
+          ↺ Retry
+        </button>
+      </div>
+
+    </div>
+    <!-- ╚═══════════════════╝ -->
+
     <!-- ╔═══ UPLOAD PANEL ═══╗ -->
     <div class="upload-panel">
 
@@ -56,10 +111,11 @@
     <!-- ╔═══ RESULT PANEL ═══╗ -->
     <div class="result-panel">
 
+      <h4 style="color:var(--blue);">Con-Kan Prediction</h4>
       <!-- Idle state -->
       <div class="result-idle" *ngIf="!prediction && !isLoading && !errorMsg">
         <span class="idle-icon">🤔</span>
-        <p>Your prediction result will appear here after uploading an image.</p>
+        <p style="color:#ffffff;">Your prediction result will appear here after uploading an image.</p>
       </div>
 
       <!-- Loading state -->
