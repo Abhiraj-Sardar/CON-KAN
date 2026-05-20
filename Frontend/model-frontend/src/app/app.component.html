@@ -3,7 +3,7 @@
   <!-- ╔══════════════ NAVBAR ══════════════╗ -->
   <nav class="navbar">
     <div class="nav-inner">
-
+      
       <div class="logo" (click)="navigate('home')">
         🐾 CON<span class="logo-vs">-</span>KAN
       </div>
@@ -21,7 +21,7 @@
           <button class="nav-btn"
                   [class.active]="activePage === 'test'"
                   (click)="navigate('test')">
-            🧪 Test The Model
+            <i class="fa-solid fa-flask"></i> Test The Model
           </button>
         </li>
 
@@ -29,7 +29,7 @@
           <button class="nav-btn"
                   [class.active]="activePage === 'kan'"
                   (click)="navigate('kan')">
-            🔬 Know KAN
+           <i style="font-size: larger;" class="fa-solid fa-hexagon-nodes"></i> Know KAN
           </button>
         </li>
 
@@ -37,7 +37,7 @@
           <button class="nav-btn"
                   [class.active]="activePage === 'cnn'"
                   (click)="navigate('cnn')">
-            🧠 About CNN
+            <i style="font-size: larger;" class="fa-solid fa-eye"></i>About CNN
           </button>
         </li>
 
@@ -45,7 +45,7 @@
           <a class="nav-btn link-external"
              href="https://github.com/Abhiraj-Sardar/CON-KAN"
              target="_blank" rel="noopener">
-            🐙 GitHub
+            <i style="font-size: larger;" class="fa-brands fa-github"></i> GitHub
           </a>
         </li>
 
@@ -53,7 +53,7 @@
           <a class="nav-btn link-external issue-btn"
              href="https://github.com/Abhiraj-Sardar/CON-KAN/issues/new"
              target="_blank" rel="noopener">
-            🐛 Raise Issue
+            <i class="fa-solid fa-bug"></i> Raise Issue
           </a>
         </li>
 

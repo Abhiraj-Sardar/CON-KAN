@@ -180,7 +180,7 @@
 
     .kan-image .image-caption {
       font-size: 13px;
-      color: #6b7c93;
+      color: var(--text-dark);
       text-align: center;
       font-style: italic;
       max-width: 360px;
@@ -190,7 +190,7 @@
     .kan-image .image-label {
       font-size: 14px;
       font-weight: 600;
-      color: #1a2a4a;
+      color: var(--text-dark);
       letter-spacing: 0.5px;
     }
 
@@ -251,7 +251,7 @@
 }
 
 .mcard-loss { 
-  background-image: url("../../../losscurve-bg.png");
+  background-image: url("../../../kan_training_animation.gif");
   max-width:480px;
   height: 380px;
   background-repeat: no-repeat;
