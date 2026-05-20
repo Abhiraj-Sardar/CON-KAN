@@ -48,8 +48,8 @@
 
 <div align="center">
   <figure>
-    <a href="https://excalidraw.com" target="_blank" rel="noopener">
-      <img src="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github%2Fproduct_showcase.png" alt="Product showcase" />
+    <a href="conkan.netlify.app/" target="_blank" rel="noopener">
+      <img src="https://github.com/Abhiraj-Sardar/CON-KAN/blob/master/Resources/landingpage-light.png" alt="Product showcase" />
     </a>
     <figcaption>
       <p align="center">
