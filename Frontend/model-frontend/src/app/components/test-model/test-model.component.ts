@@ -22,7 +22,7 @@ export class TestModelComponent {
   isDragging   : boolean           = false;
 
   private readonly cnnAPI = 'https://kan-fast-api.onrender.com/api/v1/predict';
-  private readonly conkanAPI = 'https://kan-fast-api.onrender.com/api/v1/predict';
+  private readonly conkanAPI = 'https://kan-fast-api.onrender.com/api/v4/predict';
 
   constructor(private http: HttpClient) {}
 

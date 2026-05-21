@@ -250,6 +250,8 @@
 
 }
 
+
+
 .mcard-loss { 
   background-image: url("../../../kan_training_animation.gif");
   max-width:480px;
@@ -257,8 +259,16 @@
   background-repeat: no-repeat;
   background-size: contain;
   /* animation: float 5s ease infinite; */
-
 }
+
+.mcard-perceptron{
+  background-image: url("../../../perceptron_training_animation.gif");
+  max-width:480px;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* .mcard-cnn { background: linear-gradient(145deg, #e8fff8, #d0f0ff); } */
 
 .mcard-top {

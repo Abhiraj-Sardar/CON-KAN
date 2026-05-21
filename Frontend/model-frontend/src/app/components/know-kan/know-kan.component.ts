@@ -16,20 +16,20 @@ export class KnowKanComponent {
     },
     {
       icon: '📐',
-      title: 'CNN Spatial Mastery',
-      desc:  'Convolution layers capture local patterns and spatial hierarchies efficiently.',
+      title: 'High Parameter Efficiency',
+      desc:  'KANs can achieve comparable or higher accuracy than MLPs while using up to 10 times fewer parameters',
       color: '#e0f7f4'
     },
     {
       icon: '🎯',
-      title: 'High Accuracy',
-      desc:  'Both architectures deliver strong classification on real-world image datasets.',
+      title: 'Superior Interpretability',
+      desc:  'Traditional deep learning models are often considered "black boxes". In contrast, every edge in a KAN represents a single learnable function that can be explicitly plotted and analyzed.',
       color: '#fff3e0'
     },
     {
       icon: '🔄',
-      title: 'Transfer Learning',
-      desc:  'Leverage pre-trained CNN weights for rapid fine-tuning with minimal data.',
+      title: 'Better Neural Scaling Laws',
+      desc:  'KANs scale up more gracefully than MLPs. Rather than requiring complete retraining to increase model size',
       color: '#e8f5e9'
     },
   ];
