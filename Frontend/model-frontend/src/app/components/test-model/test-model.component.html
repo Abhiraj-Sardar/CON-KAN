@@ -35,11 +35,11 @@
 
         <div class="confidence-bar" *ngIf="cnnconfidence !== null">
           <div class="conf-label">
-            Confidence: <strong>{{ (cnnconfidence * 100).toFixed(1) }}%</strong>
+            Confidence: <strong>{{ cnnconfidence}}%</strong>
           </div>
           <div class="conf-track">
             <div class="conf-fill"
-                 [style.width.%]="cnnconfidence * 100"
+                 [style.width.%]="cnnconfidence"
                  [style.background]="cnnprediction.toLowerCase() === 'cat'
                    ? 'linear-gradient(90deg, #ff6b9d, #ff9dc6)'
                    : 'linear-gradient(90deg, #ffb347, #ffd080)'">
@@ -134,11 +134,11 @@
 
         <div class="confidence-bar" *ngIf="conkanconfidence !== null">
           <div class="conf-label">
-            Confidence: <strong>{{ (conkanconfidence * 100).toFixed(1) }}%</strong>
+            Confidence: <strong>{{ conkanconfidence }}%</strong>
           </div>
           <div class="conf-track">
             <div class="conf-fill"
-                 [style.width.%]="conkanconfidence * 100"
+                 [style.width.%]="conkanconfidence"
                  [style.background]="conkanprediction.toLowerCase() === 'cat'
                    ? 'linear-gradient(90deg, #ff6b9d, #ff9dc6)'
                    : 'linear-gradient(90deg, #ffb347, #ffd080)'">

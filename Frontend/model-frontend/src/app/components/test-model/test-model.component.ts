@@ -98,11 +98,13 @@ export class TestModelComponent {
       conkan: this.http.post<{ prediction: string; probability: number }>(this.conkanAPI, form)
     }).subscribe((res)=>{
         this.cnnprediction = res.cnn.prediction;
-        this.cnnconfidence = res.cnn.probability;
+        this.cnnconfidence = parseFloat((res.cnn.probability).toFixed(2));
+        this.cnnconfidence = ( this.cnnconfidence < 0.5) ? Math.round((this.cnnconfidence/0.5)*100) : Math.round((this.cnnconfidence/0.5)*100 - 100);
         // console.log('CNN Response:', res.cnn);
         this.cnnisLoading = false;
         this.conkanprediction = res.conkan.prediction;
-        this.conkanconfidence = res.conkan.probability;
+        this.conkanconfidence = parseFloat((res.conkan.probability).toFixed(2));
+        this.conkanconfidence = ( this.conkanconfidence < 0.5) ? Math.round((this.conkanconfidence/0.5)*100) : Math.round((this.conkanconfidence/0.5)*100 - 100);
         this.conkanisLoading = false;
       }, (err)=>{
         this.cnnerrorMsg = '⚠️ Could not reach the CNN API. Please ensure the server is running.';
