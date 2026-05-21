@@ -99,7 +99,7 @@ export class TestModelComponent {
     }).subscribe((res)=>{
         this.cnnprediction = res.cnn.prediction;
         this.cnnconfidence = parseFloat((res.cnn.probability).toFixed(2));
-        this.cnnconfidence = ( this.cnnconfidence < 0.5) ? Math.round((this.cnnconfidence/0.5)*100) : Math.round((this.cnnconfidence/0.5)*100 - 100);
+        this.cnnconfidence = ( this.cnnconfidence < 0.5) ? ((this.cnnconfidence/0.5)*100==0)? 100: Math.round((this.cnnconfidence/0.5)*100) : Math.round((this.cnnconfidence/0.5)*100 - 100);
         // console.log('CNN Response:', res.cnn);
         this.cnnisLoading = false;
         this.conkanprediction = res.conkan.prediction;
