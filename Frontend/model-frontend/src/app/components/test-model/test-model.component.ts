@@ -115,14 +115,26 @@ export class TestModelComponent {
         // For demonstration, we prioritize CNN's prediction. You can implement a more complex logic if needed.
   }
 
-  get resultEmoji(): string {
+  get resultEmojicnn(): string {
     if (!this.cnnprediction) return '';
     return this.cnnprediction.toLowerCase() === 'cat' ? '🐱' : '🐶';
   }
 
-  get resultGradient(): string {
+  get resultGradientcnn(): string {
     if (!this.cnnprediction) return '';
     return this.cnnprediction.toLowerCase() === 'cat'
+      ? 'linear-gradient(135deg, #ffeef8, #ffd6f0)'
+      : 'linear-gradient(135deg, #fff8e8, #ffe5c0)';
+  }
+
+  get resultEmojiconkan(): string {
+    if (!this.conkanprediction) return '';
+    return this.conkanprediction.toLowerCase() === 'cat' ? '🐱' : '🐶';
+  }
+
+  get resultGradientconkan(): string {
+    if (!this.conkanprediction) return '';
+    return this.conkanprediction.toLowerCase() === 'cat'
       ? 'linear-gradient(135deg, #ffeef8, #ffd6f0)'
       : 'linear-gradient(135deg, #fff8e8, #ffe5c0)';
   }

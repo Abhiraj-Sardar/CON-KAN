@@ -28,9 +28,9 @@
       <!-- Success state -->
       <div class="result-box"
            *ngIf="cnnprediction && !cnnisLoading"
-           [style.background]="resultGradient">
+           [style.background]="resultGradientcnn">
 
-        <div class="result-animal">{{ resultEmoji }}</div>
+        <div class="result-animal">{{ resultEmojicnn }}</div>
         <h3 class="result-label">It's a <strong>{{ cnnprediction | titlecase }}</strong>!</h3>
 
         <div class="confidence-bar" *ngIf="cnnconfidence !== null">
@@ -127,9 +127,9 @@
       <!-- Success state -->
       <div class="result-box"
            *ngIf="conkanprediction && !conkanisLoading"
-           [style.background]="resultGradient">
+           [style.background]="resultGradientconkan">
 
-        <div class="result-animal">{{ resultEmoji }}</div>
+        <div class="result-animal">{{ resultEmojiconkan }}</div>
         <h3 class="result-label">It's a <strong>{{ conkanprediction | titlecase }}</strong>!</h3>
 
         <div class="confidence-bar" *ngIf="conkanconfidence !== null">
