@@ -105,7 +105,18 @@ first clone the repository to local system
 
 
 
-## Application Architecture
+## System Architecture
+
+<div align="center">
+  <figure>
+      <img src="https://github.com/Abhiraj-Sardar/CON-KAN/blob/master/Resources/applicationarchitecture.png" alt="Product showcase" />
+    <figcaption>
+      <p align="center">
+        System Architecture
+      </p>
+    </figcaption>
+  </figure>
+</div>
 
 ## Model Architecture
 
