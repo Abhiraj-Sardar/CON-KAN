@@ -101,7 +101,7 @@
     .kan-info p {
       font-size: 15px;
       line-height: 1.8;
-      color: var(--image-bg);
+      color: var(--black);
     }
 
     .kan-info .divider {
