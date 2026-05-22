@@ -21,9 +21,9 @@ export class KnowKanComponent {
       color: '#e0f7f4'
     },
     {
-      icon: '🎯',
-      title: 'Superior Interpretability',
-      desc:  'Traditional deep learning models are often considered "black boxes". In contrast, every edge in a KAN represents a single learnable function that can be explicitly plotted and analyzed.',
+      icon: '🏋️',
+      title: 'No Linear Weights',
+      desc:  'Traditional linear weights are entirely absent; every weight parameter is effectively replaced by a trainable, non-linear function.',
       color: '#fff3e0'
     },
     {
