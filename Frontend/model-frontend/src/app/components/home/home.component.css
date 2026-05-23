@@ -346,12 +346,12 @@
       animation: float linear infinite;
     }
 
-    .b1  { width: 75px;  height: 75px;  top: 8%;   left: 5%;   animation-duration: 6s;  animation-delay: 0s;    }
-    .b2  { width: 60px;  height: 60px;  top: 15%;  left: 72%;  animation-duration: 7s;  animation-delay: 1s;    }
-    .b3  { width: 80px;  height: 80px;  top: 60%;  left: 8%;   animation-duration: 8s;  animation-delay: 0.5s;  }
-    .b4  { width: 55px;  height: 55px;  top: 70%;  left: 65%;  animation-duration: 5s;  animation-delay: 2s;    }
-    .b5  { width: 65px;  height: 65px;  top: 5%;   left: 38%;  animation-duration: 9s;  animation-delay: 1.5s;  }
-    .b6  { width: 50px;  height: 50px;  top: 78%;  left: 38%;  animation-duration: 6.5s;animation-delay: 0.8s;  }
+    .b1  { width: 100px;  height: 100px;  top: 8%;   left: 5%;   animation-duration: 6s;  animation-delay: 0s;    }
+    .b2  { width: 100px;  height: 100px;  top: 15%;  left: 72%;  animation-duration: 7s;  animation-delay: 1s;    }
+    .b3  { width: 100px;  height: 100px;  top: 60%;  left: 8%;   animation-duration: 8s;  animation-delay: 0.5s;  }
+    .b4  { width: 100px;  height: 100px;  top: 70%;  left: 65%;  animation-duration: 5s;  animation-delay: 2s;    }
+    .b5  { width: 100px;  height: 100px;  top: 5%;   left: 38%;  animation-duration: 9s;  animation-delay: 1.5s;  }
+    .b6  { width: 100px;  height: 100px;  top: 78%;  left: 38%;  animation-duration: 6.5s;animation-delay: 0.8s;  }
     .b7  { width: 70px;  height: 70px;  top: 35%;  left: 82%;  animation-duration: 7.5s;animation-delay: 3s;    }
     .b8  { width: 68px;  height: 68px;  top: 42%;  left: 2%;   animation-duration: 8.5s;animation-delay: 2.5s;  }
     

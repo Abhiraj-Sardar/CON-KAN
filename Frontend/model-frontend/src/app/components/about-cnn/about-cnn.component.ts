@@ -17,8 +17,8 @@ export class AboutCnnComponent {
   advantages = [
     {
       icon: '🔍',
-      title: 'KAN Interpretability',
-      desc:  'Learnable spline activations make decisions transparent and human-readable.',
+      title: 'Highly Parallelizable',
+      desc:  'CNN architectures are exceptionally well-suited for execution on Graphics Processing Units (GPUs).',
       color: '#f3e8ff'
     },
     {
@@ -30,13 +30,13 @@ export class AboutCnnComponent {
     {
       icon: '🎯',
       title: 'High Accuracy',
-      desc:  'Both architectures deliver strong classification on real-world image datasets.',
+      desc:  'architectures deliver strong classification on real-world image datasets.',
       color: '#fff3e0'
     },
     {
       icon: '🔄',
-      title: 'Transfer Learning',
-      desc:  'Leverage pre-trained CNN weights for rapid fine-tuning with minimal data.',
+      title: 'Automatic Feature Extraction',
+      desc:  'CNNs eliminate the need for manual feature engineering.',
       color: '#e8f5e9'
     },
   ];
