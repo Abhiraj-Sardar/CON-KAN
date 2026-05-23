@@ -157,7 +157,7 @@
 }
 
 .mcard-loss { 
-  background-image: url("../../../losscurve-bg.png");
+  background-image: url("../../../red_training_loss_epoch50.gif");
   max-width:480px;
   height: 380px;
   background-repeat: no-repeat;
