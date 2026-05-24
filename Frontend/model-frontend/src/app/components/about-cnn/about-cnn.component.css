@@ -282,7 +282,7 @@
 .mcard-icon { font-size: 2.4rem; }
 .mcard h3   { font-size: 1.8rem; color: var(--blue);}
 
-.mcard p { color: var(--text-mid); line-height: 1.75; margin-bottom: 16px; }
+.mcard p { color: var(--text-mid); line-height: 1.75; margin-bottom: 16px; text-align: justify; }
 
 .mcard-tag {
   display: inline-block;
@@ -510,4 +510,5 @@
   font-size: 0.88rem;
   color: var(--text-mid);
   line-height: 1.65;
+  text-align: justify;
 }
