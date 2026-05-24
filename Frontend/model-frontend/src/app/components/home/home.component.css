@@ -146,7 +146,7 @@
 } */
 
 .mcard-kan { 
-  background-image: url("../../../modelcomparisonchart-bg2.png");
+  background-image: url("../../../assets/images/modelcomparisonchart-bg2.png");
   max-width:480px;
   height: 380px;
   background-repeat: no-repeat;
@@ -157,7 +157,7 @@
 }
 
 .mcard-loss { 
-  background-image: url("../../../red_training_loss_epoch50.gif");
+  background-image: url("../../../assets/images/red_training_loss_epoch50.gif");
   max-width:480px;
   height: 380px;
   background-repeat: no-repeat;

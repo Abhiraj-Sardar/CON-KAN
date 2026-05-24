@@ -71,6 +71,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 20px;
+      
     }
 
     .kan-info .badge {
@@ -102,6 +103,7 @@
       font-size: 15px;
       line-height: 1.8;
       color: var(--black);
+      text-align: justify;
     }
 
     .kan-info .divider {
@@ -251,7 +253,7 @@
 }
 
 .mcard-loss { 
-  background-image: url("../../../featureextraction.gif");
+  background-image: url("../../../assets/images/featureextraction.gif");
   max-width:400px;
   height: 300px;
   background-repeat: no-repeat;
@@ -261,7 +263,7 @@
 }
 
 .mcard-pooling { 
-  background-image: url("../../../poolfig.gif");
+  background-image: url("../../../assets/images/poolfig.gif");
   max-width:480px;
   height: 380px;
   background-repeat: no-repeat;

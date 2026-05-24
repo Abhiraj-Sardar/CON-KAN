@@ -170,7 +170,7 @@
     }
 
     .kan-image img {
-      background-image: url("../../../kan_classification.gif");
+      background-image: url("../../../assets/images/kan_classification.gif");
       width: 100%;
       max-width: 420px;
       border-radius: 12px;
@@ -241,7 +241,7 @@
 } */
 
 .mcard-kan { 
-  background-image: url("../../../modelcomparisonchart-bg.png");
+  /* background-image: url("../../../assets/images/modelcomparisonchart-bg.png"); */
   max-width:480px;
   height: 380px;
   background-repeat: no-repeat;
@@ -253,7 +253,7 @@
 
 
 .mcard-loss { 
-  background-image: url("../../../kan_training_animation.gif");
+  background-image: url("../../../assets/images/kan_training_animation.gif");
   max-width:480px;
   height: 380px;
   background-repeat: no-repeat;
@@ -262,7 +262,7 @@
 }
 
 .mcard-perceptron{
-  background-image: url("../../../perceptron_training_animation.gif");
+  background-image: url("../../../assets/images/perceptron_training_animation.gif");
   max-width:480px;
   height: 380px;
   background-repeat: no-repeat;
