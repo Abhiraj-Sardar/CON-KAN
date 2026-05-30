@@ -188,14 +188,11 @@ The system was specifically designed to maintain a balance between research expe
   </table>
 </div>
 
+## Model Evaluation Results
 
-
-## Why Those Parameters ?
-
-
-
-## Loss Curve
-
+![](https://github.com/Abhiraj-Sardar/CON-KAN/blob/master/Resources/losscurve.png)
+![](https://github.com/Abhiraj-Sardar/CON-KAN/blob/master/Resources/accuracy.png)
+![](https://github.com/Abhiraj-Sardar/CON-KAN/blob/master/Resources/rocauc.png)
 
 
 ## Suggested Readings 
