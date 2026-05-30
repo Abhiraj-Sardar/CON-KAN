@@ -103,6 +103,44 @@ first clone the repository to local system
 
 - 🖲️ Backend
 
+```bash
+cd Backend
+cd KAN-Fast-API
+```
+
+Create a Python virtual environment using:
+
+```bash
+python -m venv . venv
+```
+Ensure that Python 3.10.0 is installed before creating the environment.
+
+Activate the virtual environment using the appropriate command based on the operating system:
+
+(for windows)
+```bash
+.venv\Scripts\activate
+```
+
+(for macos/linux)
+```bash
+source .venv/bin/activate
+```
+Upgrade pip and install all required backend dependencies:
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Start the FastAPI application server using:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+After successful execution, the backend server will start at:
+http://localhost:8000
 
 
 ## System Architecture
