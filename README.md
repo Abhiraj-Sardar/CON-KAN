@@ -118,12 +118,16 @@ first clone the repository to local system
   </figure>
 </div>
 
+The proposed system follows a client-server architecture designed for real-time cat and dog image classification using the CON-KAN deep learning model. The system mainly consists of three components: the user device, the frontend server, and the backend server integrated with the trained CON-KAN model. The frontend application, developed using Angular and Vanilla CSS, provides a simple and interactive interface that allows users to upload images through a web browser. The backend is implemented using FastAPI, which manages API requests, image preprocessing, and model inference operations.
+When a user uploads an image through the frontend interface, the image is sent to the backend server using an HTTP POST request through the prediction API endpoint. The backend first preprocesses the uploaded image and then passes it to the trained CON-KAN model for classification. Based on the learned image features, the model predicts whether the uploaded image belongs to the cat or dog category. The prediction result is then returned to the user through an HTTP response and displayed on the frontend interface in real time. The frontend application is deployed on Netlify, while the FastAPI backend, along with the trained PyTorch model, is deployed on Render.com, enabling lightweight CPU-based inference and scalable real-time prediction.
+
+
 ## Model Architecture
 
 <div align="center">
   <figure>
     <a href="https://excalidraw.com" target="_blank" rel="noopener">
-      <img src="https://github.com/Abhiraj-Sardar/CON-KAN/blob/master/Resources/CNN_Cat_Dog_updated.png" alt="Product showcase" />
+      <img src="https://github.com/Abhiraj-Sardar/CON-KAN/blob/master/Resources/modelarchitecture.png" alt="Product showcase" />
     </a>
     <figcaption>
       <p align="center">
@@ -133,8 +137,15 @@ first clone the repository to local system
   </figure>
 </div>
 
-The Complete Architecture works in two layers. firstly the Convolutional Layer, which takes an input image(cat or dog). internally resizing it into 150x150 dimension. as it is a color image so the channels will be 3. hence the complete dimenion of the input image is (3,150,150). after resizing the image goes through the ConV Layer 1 where the input image matrix is bitwise multiplied with the kernel, resulting some feature maps (matrix). after that we perform max pooling, the resultant feature map is again transferred to ConV Layer 2 where the same process continues and at the end we get feature maps whose number and dimensions are different as compared to Conv Layer 1.
-Secondly, those feature maps are flattened into one dimensional array or Vector and then feeded into our KAN Layer which uses Spline Activation Function at its edges helps the model to identify pattern from the data and giving as the output if it is dog or cat.
+The proposed CON-KAN architecture is a hybrid deep learning model developed by combining the spatial feature extraction capability of convolutional neural networks (CNNs) with the adaptive functional learning behavior of Kolmogorov-Arnold networks (KANs). The architecture was designed as an experimental alternative to conventional CNN-based image classification systems that mainly depend on fully connected dense layers for final prediction. Instead of using a traditional Multi-Layer Perceptron (MLP) classifier, the proposed model integrates a custom KAN-based classification module to study whether adaptive functional mappings can effectively handle image classification tasks.
+The overall architecture follows a layered deep learning pipeline consisting of:
+- convolutional feature extraction,
+- feature normalization,
+- dimensional transformation,
+- and KAN-based classification.<br/>
+
+The system was specifically designed to maintain a balance between research experimentation and practical deployment feasibility in a resource-constrained environment.
+
 
 
 
